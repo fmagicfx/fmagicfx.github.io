@@ -15,14 +15,20 @@
             height: 200px;
             background: #aaa;
         }
+        .logo{
+            width: 100%;
+            height:100px;
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        a{
+            text-decoration:none!important;
+            color: white;
+        }
     </style>
 
-    <script>
-        $(document).ready(function () {
-            //console.log("ready!");
-        });
-
-    </script>
 </head>
 <body>
 
@@ -45,7 +51,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="ymc.html">Your Magic Card</a>
-                        <a class="dropdown-item" href="swc.html">Share with a Computer</a>
+                        <a class="dropdown-item active" href="swc.html">Share with a Computer</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Next Projects</a>
                     </div>
@@ -60,21 +66,49 @@
     
     <div class="container" style="margin-top:30px">
         <div class="row">
-            <div class="col-sm-12">
-                <h2>Share with a Computer</h2>
+            <div class="col-sm-4 col-xs-12">
+                <h3>Download</h3>
                 <!--h5>Title description, Dec 7, 2017</h5-->
-                <a href="swc.html">
+                
+                    <div class="logo">
+                        <a href="dl/ShareWithComputerWin.zip">
+                            <img src="imgs/windows.png" height="100%" alt="Windows">
+                            Windows OS (Server App)
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="dl/ShareWithComputerMac.zip">
+                            <img src="imgs/apple.png" height="100%" alt="Apple">
+                            Mac OS (Server App)
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="dl/ShareWithComputerLinux.zip">
+                            <img src="imgs/linux.png" height="100%" alt="Linux">
+                            Linux OS (Server App)
+                        </a>
+                    </div>
+                  
+                
+               
+                
+            </div>
+            <div class="col-sm-8">
+                <h3>Share with a Computer</h3>
+                <div class="logo" >
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=share.with.computer">
+                        <img src="imgs/PlayStore.png" height="100%" alt="Android"> Android (Client App)
+                    </a>
+                </div>
+                <div style="margin-left: 10px;">
                     <img class="img-fluid" src="imgs/ShareWithComputer.jpg" alt="">
-                </a>
-                <p>Share pages from your browser on Android, share your videos from the YouTube application, select texts on Android and share with a Computer.</p>
-                <br>
-                <h2>Your Magic Card</h2>
-                <!--h5>Title description, Sep 2, 2017</h5-->
-                <a href="ymc.html">
-                    <img class="img-fluid" src="imgs/YourMagicCard.jpg" alt="">
-                </a>
-                    <p>Select a card and lock the screen, do the magic trick with the card forced and then you make the card appear on the mobile
-                phone.</p>
+
+                    <p>Share pages from your browser on Android, share your videos from the YouTube application, select texts on Android and share
+                        with a Computer.</p>
+                </div>
+                
+               
+            
             </div>
         </div>
     </div>
